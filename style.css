@@ -124,6 +124,18 @@ body {
   padding-right: 0.4em;
 }
 
+.cv-info .head {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  column-gap: 3em;
+}
+
+.cv-info .head img {
+  height: 12em;
+  border-radius: 50%;
+}
+
 .cv-info .summary {
   margin: 2em min(8em, 5%);
   margin-bottom: 0;
