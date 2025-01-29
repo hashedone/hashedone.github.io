@@ -236,6 +236,16 @@ body {
   padding-inline-start: 1em;
 }
 
+.clause {
+  display: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.8em;
+  text-align: right;
+  margin: 1em 3em;
+  color: #262633;
+  border-top: 1px solid #262633;
+}
+
 @page {
   size: A4;
   margin: 0;
@@ -269,5 +279,9 @@ body {
   .break {
     page-break-before: always;
     margin-bottom: 1em;
+  }
+
+  .clause {
+    display: block;
   }
 }
