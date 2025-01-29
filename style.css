@@ -1,0 +1,261 @@
+/* Includes reset.css from https://www.joshwcomeau.com/css/custom-css-reset/ *.
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #fafaff;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(auto, 1200px) auto;
+  grid-template-rows: min-content auto;
+  grid-template-areas:
+    ". info ."
+    ". cv .";
+  min-height: 100vh;
+
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #1a1a20;
+}
+
+.cv-info {
+  background-color: #262633;
+  grid-area: info;
+  padding: 2.5rem;
+  color: #eed;
+  page-break-after: avoid;
+}
+
+.cv-info h1 {
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.cv-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.5em;
+}
+
+.icon {
+  padding-right: 0.4em;
+}
+
+.cv-info .summary {
+  margin: 2em min(8em, 5%);
+  margin-bottom: 0;
+  font-family: "Forum", serif;
+  font-size: 1.2em;
+  font-style: oblique;
+  text-align: center;
+}
+
+.cv-container {
+  align-items: flex-start;
+  page-break-before: avoid;
+  padding: 2.5em 0;
+  grid-area: cv;
+  background-color: #fafaff;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.cv-container .cv-entries {
+  page-break-before: avoid;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5em;
+}
+
+.cv-container .cv-entry {
+  padding: 0 2em;
+  margin-left: 2.5em;
+  margin-right: 1em;
+  border-left: 0.2em solid #262633;
+}
+
+.cv-container .cv-entry .title {
+  color: #262633;
+  padding-bottom: 0.5em;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.cv-container .cv-entry .title .position {
+  font-weight: 600;
+}
+
+.cv-container .cv-entry .title .dates {
+  font-weight: 600;
+}
+
+.cv-container .cv-entry .summary {
+  padding-left: 2.5em;
+  padding-right: 8em;
+  font-size: 1.1em;
+  font-family: "Forum", serif;
+}
+
+.cv-container .cv-entry .summary ul {
+  list-style-type: none;
+  margin: 0;
+  padding-inline-start: 1em;
+}
+
+.cv-container .cv-entry .summary ul li {
+  padding-inline-start: 1em;
+}
+
+.cv-container .cv-entry .summary ul li::marker {
+  font-family: "Quicksand", sans-serif;
+  content: ">";
+  font-weight: 900;
+  padding-inline-start: 1em;
+}
+
+.cv-pane {
+  border-left: 0.1em solid #262633;
+  padding: 0 1.5em;
+  color: #262633;
+  min-width: 20em;
+}
+
+.cv-pane ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  padding-inline-start: 1em;
+}
+
+.cv-pane ul li {
+  padding-inline-start: 1em;
+}
+
+.cv-pane ul li::marker {
+  font-family: "Quicksand", sans-serif;
+  content: ">";
+  font-weight: 900;
+  padding-inline-start: 1em;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .wrapper {
+    font-size: 8pt;
+    display: block;
+  }
+
+  .cv-entries {
+    display: block;
+    row-gap: 0;
+  }
+
+  .cv-box {
+    page-break-inside: avoid;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em
+  }
+
+  .cv-box.fst {
+    padding-top: 0;
+  }
+
+  .cv-entry {
+    padding: 0 0.2em;
+  }
+
+  .break {
+    page-break-before: always;
+    margin-bottom: 1em;
+  }
+}

@@ -1,14 +1,273 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 
 <head>
-  <title>Bartlomiej Kuras Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://www.nerdfonts.com/assets/css/webfont.css" crossorigin>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset=utf-8>
+  <title>Bartlomiej Kuras CV</title>
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="cv-info">
+      <h1>Bartłomiej Kuras</h1>
 
-  <h1>Resume</h1>
-  <p>Resume check</p>
+      <ul>
+        <li><span class="nf nf-fa-location_dot icon"></span>Wrocław (Poland)</li>
+        <li><span class="nf nf-fa-mobile_phone icon"></span>+45 530 072 551</li>
+        <li><span class="nf nf-md-email_outline icon"></span><a
+            href="mailto:bartlomiej.kuras@o2.pl">batlomiej.kuras@o2.pl</a>
+        </li>
+        <li><span class="nf nf-cod-github icon"></span><a href="https://github.com/hashedone">/hashedone</a></li>
+        <li><span class="nf nf-dev-linkedin icon"></span><a href="https://linkedin.com/in/hashedone">/hashedone</a></li>
+      </ul>
+
+      <div class="summary">
+        Technology-focused Rustacean with experience in telco, microservices, finance, and blockchain, interested in AI
+        and programming languages.
+      </div>
+    </div>
+
+    <div class="cv-container">
+      <div class="cv-entries">
+        <div class="cv-box fst">
+          <div class="cv-entry">
+            <div class="title">
+              <div>
+                <span class="position">Engineering
+                  Manager</span> @ <a href="https://confio.gmbh">Confio
+                  GmbH</a>
+              </div>
+              <div class="dates">2023 - present</div>
+            </div>
+            <div class="summary">I'm currently in a role involving people management and product ownership
+              responsibilities.
+              My day-to-day work includes:
+              <ul>
+                <li>Leading a team of 7 Software Developers encouraging high coding standards.</li>
+                <li>Full product ownership over supporting CosmWasm libraries including
+                  <i><a href="https://docs.rs/cw-multi-test/latest/cw_multi_test/">cw-multi-test</a></i>,
+                  <i><a href="https://docs.rs/sylvia/latest/sylvia/">sylvia</a></i>,
+                  <i><a href="https://docs.rs/storey/latest/storey/">storey</a></i>.
+                </li>
+                <li>Process management including redefining recruitment and onboarding process for technical employees.
+                </li>
+                <li>Communication with existing and potential clients, including work reporting.</li>
+                <li>People management, with focus on keeping people morale, and cleaning up obstacles.</li>
+                <li>Involved in staffing decisions.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">Rust Smart Contract Developer</span> @ <a href="https://confio.gmbh">Confio
+                  GmbH</a></div>
+              <div class="dates">2021 – 2023</div>
+            </div>
+            <div class="summary">I started in Confio as a Rust developer focusing on smart contracts
+              development. Later as part of this role I moved more towards development and maintenance
+              libraries supporting building smart contracts with CosmWasm. On this position:
+              <ul>
+                <li>I was working on smart contracts for <i>Tgrade</i> core.</li>
+                <li>I was involved in development of <i>Mesh Security</i>.</li>
+                <li>I proposed, designed and pushed to main product line the <i>Sylvia Framework</i></li>
+                <li>I developed and maintained supporting CosmWasm libraries, mostly the
+                  <i><a href="https://docs.rs/cw-multi-test/latest/cw_multi_test/">cw-multi-test</a></i> crate.
+                <li>I started CosmWasm Academy, created a course about building smart contract with CosmWasm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">Co-organizer</span> @ <a href="https://www.rust-wroclaw.pl/">Rust Wroclaw</a>
+              </div>
+              <div class="dates">2018 - present</div>
+            </div>
+            <div class="summary">It is not really commercial work, but for sure part-time job. I am coorganizing the
+              <i>Rust Wrocław Meetup</i> - local Rust community gatherings with experience sharing and networking.
+              It involves:
+              <ul>
+                <li>Organizing speakers, setting up Meetups lineup.</li>
+                <li>Organizing places to meet, looking for cooperations.</li>
+                <li>Speaking myself on the Meetup regularly.</li>
+                <li>Making sure domain is alive, Meetup is there, Slack is working</li>
+                <li>Coorganizing the Rusty Days conference</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="break"></div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">Rust Trainer</span> @ <a href="https://sii.pl">Sii</a></div>
+              <div class="dates">2021</div>
+            </div>
+            <div class="summary">I prepared the 2-days Rust training for developers with <i>C++</i> background,
+              and executed it twice, receiving strongly positive feedback. Training was focused on:
+              <ul>
+                <li>Building fundamentals on Rust basic syntax basing on trainees prior experience.</li>
+                <li>Making sure trainees understand how concepts similar to what they know differ from their
+                  counterparts
+                  in
+                  other stacks.</li>
+                <li>Providing basic, but solid intuition on the Rust novelties: <i>borrow checker</i>, <i>traits</i>,
+                  <i>enums</i> as algebraic types
+                </li>
+                <li>Practical workshop-style teaching showcasing contepts on real code and contesting trainees with
+                  further
+                  excercises</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">Rust Developer</span> @ <a href="https://gpwtech.pl">GPW Tech</a></div>
+              <div class="dates">2020-2021</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">Rust Developer and Trainer</span> @ <a
+                  href="https://www.luxoft.com/">Luxoft</a>
+              </div>
+              <div class="dates">2020</div>
+            </div>
+            <div class="summary">
+              I was hired to Luxoft for a specific task - to take care of the Rust knowledge in the team.
+              The project implementing <i>5g core</i> in Rust was carried over from the client
+              in-house team. Initially Luxoft was responsible for
+              small <i>C++</i> part, and my role was to make sure that the team is ready to take over the Rust
+              components as well. In the project I was involved in day-to-day development, but my unique
+              responsibility was to teach Rust. It was including weekly/bi-weekly presentation, one-to-one
+              coaching, pair programming, and in-depth code review. I was also taking care of the overall
+              Rust code quality.
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">Rust Developer</span> @ <a href="https://www.anixe.pl/">Anixe</a>
+              </div>
+              <div class="dates">2018-2019</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">C++/Python Developer</span> @ <a
+                  href="https://www.credit-suisse.com/pl/pl.html">Credit Suisse</a>
+              </div>
+              <div class="dates">2016-2018</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">C++ Developer</span> @ <a href="https://www.imaginationtech.com/">Imaginations
+                  Technologies</a>
+              </div>
+              <div class="dates">2015-2016</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">C++ Developer</span> @ <a href="https://www.delaval.com">DeLaval</a>
+              </div>
+              <div class="dates">2014-2015</div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="cv-box">
+          <div class="cv-entry">
+            <div class="title">
+              <div><span class="position">C++ Developer</span> @ <a href="https://www.nokia.com/">Nokia</a>
+              </div>
+              <div class="dates">2012-2014</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cv-pane">
+        <h2>Languages</h2>
+        <ul>
+          <li>Polish (native)</li>
+          <li>English</li>
+        </ul>
+
+        <h2>Skills</h2>
+        <ul>
+          <li>Rust</li>
+          <li>Software architecture</li>
+          <li>Linux</li>
+          <li>Blockchain</li>
+          <li>People management</li>
+          <li>Project management</li>
+        </ul>
+
+        <h2>Speaker activity</h2>
+        <ul>
+          <li><b>Procedural macros</b> @ Rust Gdańsk
+            (2024)</li>
+          <li><b>Ownership vs GC</b> @ JUG Wrocław
+            (2019)</li>
+          <li><b>Borrow checker</b> @ 25th level of Code
+            (2019)</li>
+
+        </ul>
+
+
+        <h2>Education</h2>
+        <ul>
+          <li>Wroclaw University of Technology, Computer Science - not graduated</li>
+        </ul>
+
+
+        <h2>After hours</h2>
+        <ul>
+          <li>Board game geek</li>
+          <li>Chess player</li>
+          <li>Piano amateur</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
 
 </body>
 
