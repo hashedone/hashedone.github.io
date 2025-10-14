@@ -142,7 +142,11 @@ body {
   font-family: "Forum", serif;
   font-size: 1.2em;
   font-style: oblique;
-  text-align: center;
+}
+
+em {
+  font-weight: 900;
+  font-style: oblique;
 }
 
 .cv-container {
@@ -169,7 +173,19 @@ body {
   border-left: 0.2em solid #262633;
 }
 
-.cv-container .cv-entry .title {
+.cv-container .cv-abstract {
+  padding: 0 2em;
+  margin-left: 2.5em;
+  margin-right: 1em;
+  font-size: 1.1em;
+  font-family: "Forum", serif;
+}
+
+.cv-container .cv-abstract p {
+  margin-top: 0.3em;
+}
+
+.cv-container .cv-entries .title {
   color: #262633;
   padding-bottom: 0.5em;
   font-size: 1.2em;
@@ -178,32 +194,32 @@ body {
   justify-content: space-between;
 }
 
-.cv-container .cv-entry .title .position {
+.cv-container .cv-entries .title .position {
   font-weight: 600;
 }
 
-.cv-container .cv-entry .title .dates {
+.cv-container .cv-entries .title .dates {
   font-weight: 600;
 }
 
-.cv-container .cv-entry .summary {
+.cv-container .cv-entries .summary {
   padding-left: 2.5em;
   padding-right: 8em;
   font-size: 1.1em;
   font-family: "Forum", serif;
 }
 
-.cv-container .cv-entry .summary ul {
+.cv-container .cv-entries .summary ul {
   list-style-type: none;
   margin: 0;
   padding-inline-start: 1em;
 }
 
-.cv-container .cv-entry .summary ul li {
+.cv-container .cv-entries .summary ul li {
   padding-inline-start: 1em;
 }
 
-.cv-container .cv-entry .summary ul li::marker {
+.cv-container .cv-entries .summary ul li::marker {
   font-family: "Quicksand", sans-serif;
   content: ">";
   font-weight: 900;
