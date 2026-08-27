@@ -1,331 +1,305 @@
-<!DOCTYPE html>
-<html lang=en>
-
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bartłomiej Kuras — Staff Rust Developer building reliable systems and AI agent infrastructure.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Forum&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://www.nerdfonts.com/assets/css/webfont.css" crossorigin>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset=utf-8>
-  <title>Bartlomiej Kuras CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Bartłomiej Kuras — Staff Rust Developer</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="cv-info">
-      <div class="head">
-        <div>
-          <h1>Bartłomiej Kuras</h1>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-          <ul>
-            <li><span class="nf nf-fa-location_dot icon"></span>Wrocław (Poland)</li>
-            <li><span class="nf nf-md-email_outline icon"></span><a
-                href="mailto:bartlomiej@kuras.online">bartlomiej@kuras.online</a>
-            </li>
-            <li><span class="nf nf-cod-github icon"></span><a href="https://github.com/hashedone">/hashedone</a></li>
-            <li><span class="nf nf-dev-linkedin icon"></span><a href="https://linkedin.com/in/hashedone">/hashedone</a>
-            <li><span class="nf nf-md-web icon"></span><a href="https://hashedone.github.io">hashedone.github.io</a>
-            </li>
-          </ul>
-
-          <div class="summary">
-            <em>Software Engineer</em> with 15+ years of experience across <em>software development</em>,
-            <em>product ownership</em>, and <em>team leadership</em>. Skilled in <em>high-performance systems</em> and
-            <em>scalable architecture</em>. Experienced in managing 20+ person teams while staying
-            hands-on with code. Passionate about mentoring and knowledge sharing.
-          </div>
-
-        </div>
-
-        <img src="avatar.jpg">
+  <div class="page-shell">
+    <header class="masthead">
+      <div class="masthead__index" aria-hidden="true">
+        <span>BK / CV</span>
+        <span>2026</span>
       </div>
 
-    </div>
+      <div class="masthead__copy">
+        <p class="eyebrow">Staff Rust Developer · Systems / AI agent infrastructure</p>
+        <h1>Bartłomiej<br>Kuras</h1>
+        <p class="lede">
+          Staff-level systems engineer specializing in turning underspecified, mathematically complex,
+          or operationally demanding problems into dependable software. Deep expertise in Rust,
+          distributed systems, blockchain, and Wasm; former engineering leader now working at the
+          intersection of systems engineering and AI agent infrastructure.
+        </p>
+      </div>
 
-    <div class="cv-container">
-      <div class="cv-entries">
-        <div class="cv-box fst">
-          <div class="cv-entry">
-            <div class="title">
+      <figure class="portrait">
+        <img src="avatar.jpg" alt="Portrait of Bartłomiej Kuras" width="341" height="341">
+        <figcaption>Wrocław, Poland</figcaption>
+      </figure>
+
+      <address class="contact-strip" aria-label="Contact details">
+        <a href="mailto:bartlomiej@kuras.online">bartlomiej@kuras.online</a>
+        <a href="https://github.com/hashedone">github.com/hashedone</a>
+        <a href="https://linkedin.com/in/hashedone">linkedin.com/in/hashedone</a>
+        <a href="https://hashedone.github.io" aria-current="page">hashedone.github.io</a>
+      </address>
+    </header>
+
+    <main id="main-content">
+      <section class="proof section-block" aria-labelledby="proof-title">
+        <div class="section-heading">
+          <p class="section-number">01 / Selected proof</p>
+          <h2 id="proof-title">Hard problems,<br>made tractable.</h2>
+        </div>
+
+        <div class="proof-grid">
+          <article class="proof-card proof-card--feature">
+            <p class="proof-card__meta">Analytical engineering · Credit Suisse</p>
+            <h3>From numerical search to an O(1) closed-form solution</h3>
+            <p>
+              Reframed a numerical collateral-allocation routine as an analytically solvable
+              optimization problem. Derived and proved a constant-time solution, validated it
+              through parity testing against the source implementation, and improved numerical
+              accuracy by removing approximation error.
+            </p>
+          </article>
+
+          <article class="proof-card">
+            <p class="proof-card__meta">Rust standard library · API design</p>
+            <h3><a href="https://www.rustikon.dev/talk/to-impl-or-not-to-impl-the-state-of-existential-types-in-rust">Option as a zero-or-one slice<span aria-hidden="true"> ↗</span></a></h3>
+            <p>
+              Contributed to the standard-library APIs <code>Option::as_slice</code> and
+              <code>Option::as_mut_slice</code>, which let generic code view an optional value as
+              an immutable or mutable slice with at most one element.
+            </p>
+          </article>
+
+          <article class="proof-card">
+            <p class="proof-card__meta">Open source · CosmWasm</p>
+            <h3>Tools developers could build on</h3>
+            <p>
+              Created the <a href="https://github.com/hashedone/sylvia">Sylvia smart-contract framework</a>, maintained
+              <a href="https://github.com/CosmWasm/cw-multi-test">cw-multi-test</a>, and
+              co-created CosmWasm Academy to turn ecosystem knowledge into reusable tools and training.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <div class="content-grid">
+        <section class="experience section-block" aria-labelledby="experience-title">
+          <div class="section-heading section-heading--inline">
+            <p class="section-number">02 / Experience</p>
+            <h2 id="experience-title">Career record</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="role role--current">
+              <div class="role__when">2026 —<br>present</div>
+              <div class="role__body">
+                <p class="role__signal">Current</p>
+                <h3>Staff Rust Developer</h3>
+                <p class="role__company"><a href="https://softwaremill.com/">SoftwareMill</a> · part of <a href="https://virtuslab.com/">VirtusLab Group</a></p>
+                <ul>
+                  <li>Contribute to <a href="https://visdom.virtuslab.com/">Visdom</a>, VirtusLab Group’s AI-native SDLC platform, with a focus on Rust systems engineering.</li>
+                  <li>Previously designed and implemented a Rust runtime for executing custom indicators in a trading system.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2025</div>
+              <div class="role__body">
+                <h3>Head of Engineering</h3>
+                <p class="role__company"><a href="https://philabs.xyz">Phi Labs Ltd.</a></p>
+                <ul>
+                  <li>Owned the technical direction of Bolt Liquidity, spanning protocol design, mathematical foundations, product requirements, and delivery.</li>
+                  <li>Led a team of up to five engineers while remaining active in implementation and code review.</li>
+                  <li>Balanced near-term delivery with architectural integrity and deliberate technical risk management.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2023 —<br>2025</div>
+              <div class="role__body">
+                <h3>Engineering Manager</h3>
+                <p class="role__company"><a href="https://confio.gmbh">Confio GmbH</a></p>
+                <ul>
+                  <li>Led seven engineers and owned the roadmap for CosmWasm libraries, including cw-multi-test and the Sylvia framework.</li>
+                  <li>Combined architecture and product ownership with hiring, onboarding, people management, and client communication.</li>
+                  <li>Removed delivery obstacles while maintaining strong engineering standards and sustainable team practices.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2021 —<br>2023</div>
+              <div class="role__body">
+                <h3>Rust Smart Contract Developer</h3>
+                <p class="role__company"><a href="https://confio.gmbh">Confio GmbH</a></p>
+                <ul>
+                  <li>Developed Rust smart contracts for TGrade and collaborated on the Mesh Security initiative.</li>
+                  <li>Conceived and built the Sylvia framework; maintained core CosmWasm tooling, including cw-multi-test.</li>
+                  <li>Co-created CosmWasm Academy to teach developers how to build and test smart contracts.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2021</div>
+              <div class="role__body">
+                <h3>Rust Trainer</h3>
+                <p class="role__company"><a href="https://sii.pl">Sii</a></p>
+                <p>Designed and delivered a two-day Rust program for experienced C++ and Python developers, combining language fundamentals with hands-on work.</p>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2020 —<br>2021</div>
+              <div class="role__body">
+                <h3>Rust Developer</h3>
+                <p class="role__company"><a href="https://gpwtech.pl">GPW Tech</a></p>
+                <p>Built safety- and latency-critical components for WATS, a stock-exchange trading system, applying low-level optimization and carefully justified unsafe Rust.</p>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2020</div>
+              <div class="role__body">
+                <h3>Rust Developer &amp; Trainer</h3>
+                <p class="role__company"><a href="https://www.luxoft.com/">Luxoft</a></p>
+                <p>Developed components for a 5G Core network while preparing a C++ team to take ownership of Rust services through workshops, mentoring, pairing, recruitment, and code review.</p>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2018 —<br>2019</div>
+              <div class="role__body">
+                <h3>Rust Developer</h3>
+                <p class="role__company"><a href="https://www.anixe.pl/">Anixe</a></p>
+                <p>Built backend systems for high-throughput hotel search and flexible pricing in Rust, working autonomously within tight hardware constraints.</p>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2016 —<br>2018</div>
+              <div class="role__body">
+                <h3>C++ / Python Developer</h3>
+                <p class="role__company">Credit Suisse</p>
+                <p>Helped rewrite a credit-risk calculation engine, working on high-volume overnight processing, numerical correctness, and regulated financial calculations.</p>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2015 —<br>2016</div>
+              <div class="role__body">
+                <h3>C++ Developer</h3>
+                <p class="role__company"><a href="https://www.imaginationtech.com/">Imagination Technologies</a></p>
+                <p>Developed a real-time SystemC GPU simulator used to test planned hardware and driver changes before physical silicon was available.</p>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2014 —<br>2015</div>
+              <div class="role__body">
+                <h3>C++ Developer</h3>
+                <p class="role__company"><a href="https://www.delaval.com">DeLaval</a></p>
+                <p>Worked across PLC logic, hardware drivers, process control, and operator UI integration on a prototype rotary milking system.</p>
+              </div>
+            </article>
+
+            <article class="role">
+              <div class="role__when">2012 —<br>2014</div>
+              <div class="role__body">
+                <h3>C++ Developer</h3>
+                <p class="role__company"><a href="https://www.nokia.com/">Nokia</a></p>
+                <p>Progressed from working student to mid-level developer in the BTS operations and maintenance domain, debugging fault recovery, logging, and network management behavior in a large codebase.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="profile" aria-label="Skills, speaking, and education">
+          <section aria-labelledby="skills-title">
+            <p class="section-number">03 / Capability map</p>
+            <h2 id="skills-title">Technical expertise</h2>
+
+            <div class="skill-group">
+              <h3>Core engineering</h3>
+              <p>Rust · C++ · Linux · performance · concurrency · numerical correctness · API and library design</p>
+            </div>
+            <div class="skill-group">
+              <h3>AI systems</h3>
+              <p>Agent memory systems · context runtime design · MCP integrations · secure tool use and provider-boundary controls · AI-native developer tooling</p>
+            </div>
+            <div class="skill-group">
+              <h3>Distributed &amp; domain systems</h3>
+              <p>Distributed architecture · blockchain · Wasm / CosmWasm · financial systems · telecom</p>
+            </div>
+            <div class="skill-group">
+              <h3>Technical leadership</h3>
+              <p>Architecture · product ownership · engineering management · hiring · mentoring · client communication</p>
+            </div>
+            <div class="skill-group">
+              <h3>Primary languages</h3>
+              <p>Rust · C++ · Python</p>
+            </div>
+          </section>
+
+          <section aria-labelledby="speaking-title">
+            <p class="section-number">04 / Knowledge sharing</p>
+            <h2 id="speaking-title">Speaking</h2>
+            <ul class="plain-list">
+              <li><span>2026</span> <a href="https://www.rustikon.dev/talk/to-impl-or-not-to-impl-the-state-of-existential-types-in-rust">To impl or not to impl: The State of Existential Types in Rust</a><br><small>Rustikon</small></li>
+              <li><span>2024</span> Procedural macros<br><small>Rust Gdańsk</small></li>
+              <li><span>2019</span> Ownership vs GC<br><small>JUG Wrocław</small></li>
+              <li><span>2019</span> Borrow checker<br><small>25th Level of Code</small></li>
+            </ul>
+            <h3 class="list-heading">Community</h3>
+            <ul class="plain-list">
+              <li>Rust Wrocław — co-organized several editions of the local Rust meetup.</li>
+            </ul>
+            <h3 class="list-heading">Writing</h3>
+            <ul class="plain-list">
+              <li><a href="https://softwaremill.com/mastering-rust-patterns-vol-1-rust-newtypes/">Mastering Rust Patterns vol. 1: Rust Newtypes</a><br><small>SoftwareMill</small></li>
+              <li><a href="https://softwaremill.com/adapter-pattern-in-rust-overcoming-the-orphan-rule-with-newtype-and-extension-traits/">Adapter Pattern in Rust</a><br><small>SoftwareMill</small></li>
+            </ul>
+          </section>
+
+          <section class="languages" aria-labelledby="languages-title">
+            <p class="section-number">05 / Languages</p>
+            <h2 id="languages-title">Communication</h2>
+            <dl class="language-list">
               <div>
-                <span class="position">Head of Engineering</span> @ <a href="https://philabs.xyz">Philabs LTD</a>
+                <dt>Polish</dt>
+                <dd>native</dd>
               </div>
-              <div class="dates">2025</div>
-            </div>
-            <div class="summary">
-              In this role, I took full responsibility for the technical aspects of the <a href="https://www.boltliquidity.io/">Bolt Liquidity</a> product. My contributions included designing the protocol and mathematical foundations, establishing development processes, and maintaining high standards. I led by example, actively participating in the development lifecycle.
-              <ul>
-                <li><strong>Technical Contributions:</strong> Actively contributed to the codebase and conducted code reviews.</li>
-                <li><strong>Leadership:</strong> Directed a team of up to 5 developers, fostering a culture of excellence.</li>
-                <li><strong>Product Ownership:</strong> Defined product requirements and ensured team-wide understanding.</li>
-                <li><strong>Strategic Planning:</strong> Balanced development speed with long-term maintainability.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
               <div>
-                <span class="position">Engineering Manager</span> @ <a href="https://confio.gmbh">Confio GmbH</a>
+                <dt>English</dt>
+                <dd>professional</dd>
               </div>
-              <div class="dates">2023 - 2025</div>
-            </div>
-            <div class="summary">
-              In this role, I embraced the challenges of people management and product ownership with unwavering confidence and determination. I contributed to architectural decisions while taking full responsibility for the well-being and professional growth of my team members. Transitioning from a senior developer position, I made a significant impact through my leadership.
-              Key responsibilities include:
-              <ul>
-                <li><strong>Team Leadership:</strong> Directed a team of 7 developers, fostering collaboration and maintaining impeccable coding standards.</li>
-                <li><strong>Product Ownership:</strong> Held comprehensive ownership of <i>CosmWasm</i> libraries, including <i><a href="https://docs.rs/cw-multi-test/latest/cw_multi_test/">cw-multi-test</a></i> and <i><a href="https://docs.rs/sylvia/latest/sylvia/">Sylvia Framework</a></i>.</li>
-                <li><strong>Recruitment and Onboarding:</strong> Revamped recruitment and onboarding processes, ensuring seamless integration for new employees.</li>
-                <li><strong>Client Relationships:</strong> Built and nurtured strong client relationships through effective communication and detailed reporting.</li>
-                <li><strong>People Management:</strong> Focused on boosting team morale and clearing obstacles to enhance productivity.</li>
-                <li><strong>Strategic Staffing:</strong> Played a critical role in making informed staffing decisions that aligned with organizational goals.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+            </dl>
+          </section>
 
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">Rust Smart Contract Developer</span> @ <a href="https://confio.gmbh">Confio GmbH</a></div>
-              <div class="dates">2021 – 2023</div>
-            </div>
-            <div class="summary">
-              As a Rust Smart Contract Developer at Confio, I specialized in blockchain technology and contributed significantly to the <i>CosmWasm</i> ecosystem. My role involved innovation, development, and education within the blockchain domain.
-              <ul>
-                <li><strong>Smart Contract Development:</strong> Developed robust smart contracts for <i>TGrade</i> core and collaborated on the <i>Mesh Security</i> initiative.</li>
-                <li><strong>Framework Innovation:</strong> Conceptualized, designed, and integrated the <i>Sylvia Framework</i> into the main product line, enhancing the development process.</li>
-                <li><strong>Library Maintenance:</strong> Maintained and improved <i>CosmWasm</i> libraries, notably the <i><a href="https://docs.rs/cw-multi-test/latest/cw_multi_test/">cw-multi-test</a></i> crate.</li>
-                <li><strong>Educational Outreach:</strong> Founded the <i>CosmWasm Academy</i>, providing courses and resources to educate developers on building blockchain solutions.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          <section aria-labelledby="education-title">
+            <p class="section-number">06 / Education</p>
+            <h2 id="education-title">Wrocław University of Science and Technology</h2>
+            <p>Studied Computer Science; left during the second year to continue working as a software engineer.</p>
+          </section>
 
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">Co-organizer</span> @ <a href="https://www.rust-wroclaw.pl/">Rust Wroclaw</a></div>
-              <div class="dates">2018 - present</div>
-            </div>
-            <div class="summary">
-              I have been an active co-organizer of the <i>Rust Wrocław Meetup</i>, a the local Rust community meeting to share knowledge and network. From 2019 to 2023, I played a key role in making it the strongest Rust community in Poland by co-organizing monthly events featuring two talks per evening. My contributions include:
-              <ul>
-                <li><strong>Speaker Coordination:</strong> Identified and organized speakers to ensure engaging and insightful Meetup lineups.</li>
-                <li><strong>Venue Management:</strong> Secured venues and fostered partnerships to facilitate seamless events.</li>
-                <li><strong>Public Speaking:</strong> Regularly delivered talks to share my insights and expertise with the community.</li>
-                <li><strong>Community Infrastructure:</strong> Ensured the domain, Meetup page, and Slack channels remained operational.</li>
-                <li><strong>Conference Organization:</strong> Co-organized the online Rusty Days conference to extend the community's reach.</li>
-              </ul>
-              My involvement in the Rust Meetup has been entirely pro bono, driven by a deep passion for the Rust language and its community.
-            </div>
-          </div>
-        </div>
-
-        <div class="break"></div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">Rust Trainer</span> @ <a href="https://sii.pl">Sii</a></div>
-              <div class="dates">2021</div>
-            </div>
-            <div class="summary">
-              At Sii, I had the opportunity to design and deliver a comprehensive 2-day <i>Rust</i> training program tailored for developers with <i>C++</i> and <i>Python</i> backgrounds. This program received overwhelmingly positive feedback and focused on:
-              <ul>
-                <li><strong>Foundation Building:</strong> Introducing <i>Rust</i> basic syntax and concepts while leveraging the trainees' existing knowledge.</li>
-                <li><strong>Conceptual Clarity:</strong> Highlighting differences between familiar programming paradigms and <i>Rust</i>'s unique approach.</li>
-                <li><strong>Rust Innovations:</strong> Providing a deep understanding of key features such as the <i>borrow checker</i>, <i>traits</i>, and <i>enums</i> as algebraic types.</li>
-                <li><strong>Hands-On Learning:</strong> Conducting practical workshops with real-world examples and engaging exercises to reinforce learning.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">Rust Developer</span> @ <a href="https://gpwtech.pl">GPW Tech</a></div>
-              <div class="dates">2020 - 2021</div>
-            </div>
-            <div class="summary">
-              My time at GPW, though brief, was marked by significant contributions to the Wats stock exchange system, which was designed to replace Poland's national currency exchange system. This mission-critical application was tasked with maintaining the order book and matching transactions. While the system appeared simple at a glance, its true challenge lay in ensuring both safety and performance under high-pressure conditions. Highlights of my work include:
-              <ul>
-                <li><strong>Performance Optimization:</strong> Leveraged my deep understanding of low-level performance to optimize system operations.</li>
-                <li><strong>Safety Assurance:</strong> Addressed the criticality of reliability and correctness in financial systems handling vast volumes of transactions.</li>
-                <li><strong>Advanced Rust Usage:</strong> Effectively utilized justified unsafe code to meet stringent performance requirements while maintaining soundness.</li>
-                <li><strong>High-Frequency Trading Preparedness:</strong> Ensured system readiness to handle the demands of HFT trading, where millisecond-level advantages are pivotal.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">Rust Developer and Trainer</span> @ <a href="https://www.luxoft.com/">Luxoft</a>
-              </div>
-              <div class="dates">2020</div>
-            </div>
-            <div class="summary">
-              At Luxoft, I was tasked with advancing the team's <i>Rust</i> expertise as part of a project involving the implementation of a <i>5G core</i>. Initially, Luxoft was responsible for a small <i>C++</i> component, while the client's team managed the <i>Rust</i> segments. My role was pivotal in ensuring the technical readiness of our team to take over the <i>Rust</i> components while maintaining high-quality standards.
-              <ul>
-                <li><strong>Team Enablement:</strong> Delivered weekly/bi-weekly technical sessions, one-on-one mentorship, and established pair programming practices.</li>
-                <li><strong>Code Quality Assurance:</strong> Advocated for high standards of <i>Rust</i> coding practices to ensure highly maintainable solutions.</li>
-                <li><strong>Recruitment:</strong> Played a key role in recruiting and seamlessly onboarding new Rust developers.</li>
-                <li><strong>Active Development:</strong> Participated in day-to-day development, focusing on delivering efficient and reliable solutions for the <i>5G core</i>.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">Rust Developer</span> @ <a href="https://www.anixe.pl/">Anixe</a></div>
-              <div class="dates">2018 - 2019</div>
-            </div>
-            <div class="summary">
-              At Anixe, I focused on backend Rust development for a hotel booking system's search engine. The product aimed to manage and unify hotel offers to help users find the best stay based on their requirements.
-              <ul>
-                <li><strong>Flexible Pricing System:</strong> Developed a system to handle diverse hotel pricing structures, ensuring adaptability and accuracy.</li>
-                <li><strong>Performance Optimization:</strong> Leveraged Rust's high-performance capabilities to maintain optimal throughput on limited hardware resources.</li>
-                <li><strong>Autonomous Development:</strong> Operated with high autonomy alongside the team lead.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">C++/Python Developer</span> @ <a href="https://www.credit-suisse.com/pl/pl.html">Credit Suisse</a></div>
-              <div class="dates">2016 - 2018</div>
-            </div>
-            <div class="summary">
-              Credit Suisse provided one of the most impactful experiences of my career. I was involved in the complete rewrite of the credit risk estimation engine. This product analyzed stock transactions for a given day to build a foundation for predicting future transaction risks.
-              <ul>
-                <li><strong>High-Performance Computing:</strong> Designed solutions to handle overwhelming transaction volumes, ensuring calculations were completed before the start of the next trading day.</li>
-                <li><strong>Accuracy and Compliance:</strong> Developed legally compliant, precise implementations that significantly influenced quants' efficiency and adhered to government regulations on credit risk measurement.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">C++ Developer</span> @ <a href="https://www.imaginationtech.com/">Imagination Technologies</a></div>
-              <div class="dates">2015 - 2016</div>
-            </div>
-            <div class="summary">
-              At Imagination Technologies, I contributed to the development of a GPU simulator used for testing planned hardware changes and drivers without the need for physical hardware. The simulator was implemented in a low-level C++ dialect close to C to minimize overhead and maintain real-time performance. Key experience I gathered there include:
-              <ul>
-                <li><strong>SystemC Library:</strong> Developing using the SystemC library tought me to thing very closely to the hardware.</li>
-                <li><strong>Unusual Version Control:</strong> Gained experience with Perforce, enhancing my understanding of diverse version control workflows.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">C++ Developer</span> @ <a href="https://www.delaval.com">DeLaval</a></div>
-              <div class="dates">2014 - 2015</div>
-            </div>
-            <div class="summary">
-              DeLaval, a leading hardware company in the milk-farming industry, provided me with a unique opportunity to work on a prototype rotary carousel for continuous cow milking. This experience involved working across various stack levels:
-              <ul>
-                <li><strong>PLC Programming:</strong> Programmed simple PLCs to handle malfunctions and ensure safety during operation.</li>
-                <li><strong>Driver Development:</strong> Developed drivers to maintain communication with hardware, control rotary speeds, detach milking stations, and manage processes at higher levels.</li>
-                <li><strong>UI Integration:</strong> Enabled seamless communication with the UI application for efficient human operator interactions.</li>
-                <li><strong>Decision-Making Impact:</strong> Gained recognition for analytical thinking and contributed to architectural decisions, influencing solutions that were later refined by the architect.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="cv-box">
-          <div class="cv-entry">
-            <div class="title">
-              <div><span class="position">C++ Developer</span> @ <a href="https://www.nokia.com/">Nokia</a></div>
-              <div class="dates">2012 - 2014</div>
-            </div>
-            <div class="summary">
-              Nokia marked the beginning of my professional software development journey. Starting as a working student, I progressed to a mid-level developer role, gaining invaluable experience in collaborative software development and problem-solving in a large, complex codebase. My work primarily focused on the OAM (Operational and Maintenance) component of the BTS, a high-level operating system that manages fault recovery, logging, and communication between hardware and network management systems.
-              <ul>
-                <li><strong>Hands-On Development:</strong> Wrote and debugged code based on provided specifications to address issues reported by BTS operators.</li>
-                <li><strong>Collaboration:</strong> Developed strong teamwork skills while working with diverse professionals on a shared codebase.</li>
-                <li><strong>Technical Growth:</strong> Honed my understanding of the C++ stack, common tools, and patterns, laying a solid foundation for future roles.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
+          <section class="outside" aria-labelledby="outside-title">
+            <p class="section-number">07 / Outside the terminal</p>
+            <h2 id="outside-title">Board games · chess · piano</h2>
+          </section>
+        </aside>
       </div>
+    </main>
 
-      <div class="cv-pane">
-        <h2>Languages</h2>
-        <ul>
-          <li>Polish (native)</li>
-          <li>English</li>
-        </ul>
-
-        <h2>Skills</h2>
-        <ul>
-          <li>Rust</li>
-          <li>E2E Software development processes</li>
-          <li>Software architecture</li>
-          <li>Teaching</li>
-          <li>People management</li>
-          <li>Project management</li>
-          <li>Linux</li>
-          <li>Blockchain</li>
-          <li>Grasp of lot of programming languages: C++, Haskell, Python, Lua, and more</li>
-        </ul>
-
-        <h2>Speaker activity</h2>
-        <ul>
-          <li><b>Procedural macros</b> @ Rust Gdańsk
-            (2024)</li>
-          <li><b>Ownership vs GC</b> @ JUG Wrocław
-            (2019)</li>
-          <li><b>Borrow checker</b> @ 25th level of Code
-            (2019)</li>
-
-        </ul>
-
-
-        <h2>Education</h2>
-        <ul>
-          <li>Wroclaw University of Technology, Computer Science - not graduated</li>
-        </ul>
-
-
-        <h2>After hours</h2>
-        <ul>
-          <li>Board game geek</li>
-          <li>Chess player</li>
-          <li>Piano amateur</li>
-        </ul>
-      </div>
-    </div>
+    <footer>
+      <p>References and further project details available on request.</p>
+      <p class="print-clause">I consent to the processing of my personal data for recruitment purposes.</p>
+    </footer>
   </div>
-  </div>
-
-  <div class="clause">
-    <p>I hereby give consent for my personal data to be processed for the purpose of conducting
-      recruitment for the position for which I am applying.</p>
-  </div>
-
 </body>
-
 </html>
